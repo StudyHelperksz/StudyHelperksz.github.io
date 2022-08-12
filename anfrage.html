@@ -112,7 +112,7 @@
       
 
       <div>
-        <label for="teacher" class="head-inputs">Lehrerkürzel(Grossbuchstaben):</label><br>
+        <label for="teacher" class="head-inputs">Lehrerkürzel:</label><br>
         <input type="text" id="teacher" name="teacher" required placeholder="z. B. MAMU" minlength="4" maxlength="4" value=""> 
         <br><span id="teacher-validity"><br></span>
       </div>
@@ -362,12 +362,13 @@ function myfunction() {
 
   if (check != false ) {
 
-    const emailTo = 'studyhelper.ksz@gmail.com'
-    var emailBody = "Fach: " + subject  + "\nLehrer: " + teacher + "\nSprache: " + language + "\nKlassenstufe: " + number + "\nGebrauchsdatum: " 
+    const emailTo = "studyhelper.ksz@gmail.com?Subject="+ number + "-" + subject + "-" + teacher.toUpperCase();
+    
+    var emailBody = "Fach: " + subject  + "\nLehrer: " + teacher.toUpperCase() + "\nSprache: " + language + "\nKlassenstufe: " + number + "\nGebrauchsdatum: " 
       + calendar + "\nBeschreibung: " + description + "\n\nWir danken dir vielmals für deine Anfrage und suchen schnellstmöglich einen Partner.";
 
       emailBody = encodeURIComponent(emailBody);
-      window.open(`mailto:${emailTo}?&body=${emailBody}`, '_self');
+      window.open(`mailto:${emailTo.toUpperCase()}&body=${emailBody}`, '_self');
     };
 
 };
