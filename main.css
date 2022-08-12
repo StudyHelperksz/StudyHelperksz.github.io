@@ -845,14 +845,14 @@ h4 {
       align-items: center;
   }
 
-  .sidenav {
+    .sidenav {
       top: 55px;
       position: sticky;
       background-color: white;
       border-bottom: solid;
       border-color: var(--blue);
       border-width: 0px;
-  }
+    }
 
 
   .test {
