@@ -344,7 +344,8 @@ h4 {
     font-size: 18px;
     font-weight: 200;
     font-family: 'Poppins';
-    resize: horizontal; max-width: 1200px; min-width:750;
+    width: calc(100%-30px)
+    
     /* herausfinden wie man das blaue pop up verschwinden lässt*/
   }
 
