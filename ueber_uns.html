@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KSZ Webseite</title>
+    
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="../main.css">
+    
+      </head>
+
+</head>
+<body>
+
+
+<div class="navbar">
+    <img class="s-nav" src="../icons-google/menu_blue.svg"  alt="menu" onclick="openNav()" >
+    <a href="#"><span class="logo-1">Study</span><span class="logo-2">Helper</span></a>
+    <div class="cont-language">
+    </div>
+</div>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <div class="side-navbar">
+    <img class="s-nav" src="../icons-google/close_blue.svg" alt="close" onclick="closeNav()">
+    <h3 id="sidenav-logo"><span class="logo-1">Study</span><span class="logo-2">Helper</span></h3>
+    <p></p>
+  </div>
+  
+
+  <div class="nav-cont">
+        <div class="nav-items">
+            <a href="anfrage.html"class="nav-items-text">PRÜFUNGEN ANFRAGEN</a>
+            <img class="s-nav1" src="../icons-google/arrow_less-darkblue.svg" style="transform:rotate(90deg)" alt="">
+        </div>
+      
+        <div class="nav-items">
+            <a href="marktplatz.html"class="nav-items-text">MARKTPLATZ PRÜFUNGEN</a>
+            <img class="s-nav1" src="../icons-google/arrow_less-darkblue.svg" style="transform:rotate(90deg)" alt="">
+        </div>
+
+
+      <div class="nav-items">
+        <a href="ueber_uns.html" class="nav-items-text">ÜBER UNS</a>
+        <img class="s-nav1" src="../icons-google/arrow_less-darkblue.svg" style="transform:rotate(90deg)" alt="">
+      </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+<! -- für sub titel in was von menu ausgewählt wurde -->
+<h3 class="main-header">ÜBER UNS</h3>
+
+<main>
+  <h2>Was ist StudyHelper?</h2>
+  <p>StudyHelper ist die erste schweizerische Vermittlungsplattform von Prüfungen für Schülerinnen und Schüler der Kantonsschule Zug.  
+    StudyHelper stellt die technische Plattform für Inserenten zur Verfügung und bietet aber selbst nichts an. 
+    Für die Aktivität auf StudyHelper ist keine Anmeldung notwendig. Um einen Artikel zu inserieren, sind lediglich fünf Informationen zur Prüfung anzugeben. 
+    Wenn jemand ein Inserat findet, für das er die passende Prüfung hat, so kontaktiert er die betreffende Person per Mail und sendet ihr die Prüfung.
+    Die Inserate werden wöchentlich am Sonntag um 12:00 Uhr aktualisiert.
+  </p>
+  
+  <h2>Wie kann ich mitwirken?</h2>
+  <p>StudyHelper beruht auf dem Prinzip des Altruismus [„Uneigennützigkeit, Selbstlosigkeit, durch Rücksicht auf andere gekennzeichnete Denk- und Handlungsweise“]. Nach diesem Grundsatz soll man nicht nur Anfragen, sondern die Bedeutung im "Mithelfen" sehen.
+
+     </p>
+
+  <h2>In welche Richtung entwickelt sich StudyHelper?</h2>
+  <p>Grundsätzlich wird das jetztige Prinzip bestehen bleiben. Das Ziel bis Anfang nächsten Jahres ist eine Integration mit einem
+    Server herzustellen, um Auftragsprozesse weitgehend zu automatisieren. Dadurch kann man sich auf das Wesentliche in der Auftragsbearbeitung konzentrieren und Anfragen müssen nicht mehr manuell abgearbeitet werden. Zudem soll mit der Integration ein neues 
+    Webdesign erfolgen. Bei Anmerkungen oder Designvorschlägen meldet euch bitte via Mail an:  <a href="mailto:studyhelper.ksz@gmail.com?" >studyhelper.ksz@gmail.com</a></p>
+    
+  
+  <div id="bereich">
+      
+  </div>
+</main>
+
+
+
+<footer>
+
+  <h3 class="cont-foot">StudyHelper KSZ</h3>
+  
+
+  <div class="foot-cont-link">
+
+
+    <div class="con-foot-link">
+      <h4 class="foot-title">Diensleistungen</h4>
+  
+      <div class="con-foot-items">
+        <a href="marktplatz.html" class="foot-text" >Marktplatz Prüfungen</a><br>
+        <a href="anfrage.html" class="foot-text">Prüfungen Senden</a><br>
+        
+      </div>
+    </div>
+  
+  
+    <div class="con-foot">
+      <h4 class="foot-title">Kontaktoptionen</h4>
+  
+      <div class="con-foot-items">
+        <a href="ueber_uns.html" class="foot-text">Über uns</a><br>
+        <a href="mailto:studyhelper.ksz@gmail.com?" class="foot-text">Mail</a><br>
+        <a href="https://www.instagram.com/studyhelper.ksz/" class="foot-text">Instagram</a><br>
+  
+  
+      </div>
+    </div>
+    
+  
+  
+  </div>
+  <br>
+
+</footer>
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0%";
+}
+
+
+window.addEventListener('resize', function(event){
+    var w = window.innerWidth;
+    var h = window.innerHeight; 
+    if (w > 900) {
+  		document.getElementById("mySidenav").style.width = "100%";
+}
+
+
+});
+
+
+</script>
+   
+
+
+</html> 

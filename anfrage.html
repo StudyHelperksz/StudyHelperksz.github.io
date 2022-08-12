@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KSZ Webseite</title>
+    
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="../main.css">
+    
+      </head>
+
+</head>
+<body>
+
+
+<div class="navbar">
+    <img class="s-nav" src="../icons-google/menu_blue.svg"  alt="menu" onclick="openNav()" >
+    <a href="#"><span class="logo-1">Study</span><span class="logo-2">Helper</span></a>
+    <div class="cont-language">
+    </div>
+</div>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <div class="side-navbar">
+    <img class="s-nav" src="../icons-google/close_blue.svg" alt="close" onclick="closeNav()">
+    <h3 id="sidenav-logo"><span class="logo-1">Study</span><span class="logo-2">Helper</span></h3>
+    <p></p>
+  </div>
+  
+
+  <div class="nav-cont">
+        <div class="nav-items">
+            <a href="anfrage.html"class="nav-items-text">PRÜFUNGEN ANFRAGEN</a>
+            <img class="s-nav1" src="../icons-google/arrow_less-darkblue.svg" style="transform:rotate(90deg)" alt="">
+        </div>
+      
+        <div class="nav-items">
+            <a href="marktplatz.html"class="nav-items-text">MARKTPLATZ PRÜFUNGEN</a>
+            <img class="s-nav1" src="../icons-google/arrow_less-darkblue.svg" style="transform:rotate(90deg)" alt="">
+        </div>
+
+
+      <div class="nav-items">
+        <a href="ueber_uns.html" class="nav-items-text">ÜBER UNS</a>
+        <img class="s-nav1" src="../icons-google/arrow_less-darkblue.svg" style="transform:rotate(90deg)" alt="">
+      </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+<! -- für sub titel in was von menu ausgewählt wurde -->
+<h3 class="main-header">PRÜFUNGEN ANFRAGEN</h3>
+
+<main>
+  <p>Für die Anfrage ist keine Registrierung erforderlich und es müssen auch keine persönlichen Daten preisgegeben werden. Mit einem Klick auf den Anfrage-Button wird man 
+    automatisch auf sein E-Mail-Programm weitergeleitet. 
+    Bei Spam oder anderen nicht zielführenden Aktionen wird die Email-Adresse ohne jegliche Vorwarnung gesperrt.  
+  </p>
+
+
+
+    <form class="asking-form">
+
+      <div>
+        <label for="subject" class="head-inputs">Fach:</label><br>
+        
+        <select name="subject" id="subject"  >
+          <option value="" disabled selected>Wähle ein Fach</option>
+          <option value="BG">Bildnerische Gestaltung</option>
+          <option value="BI">Biologie</option>
+          <option value="CI">Chemie</option>
+          <option value="DE">Deutsch</option>
+          <option value="EN">Englisch</option>
+          <option value="FR">Französisch</option>
+          <option value="GG">Geografie</option>
+          <option value="GP">Geometrisches Praktikum</option>
+          <option value="GS">Geschichte</option>
+          <option value="GSP">Geschichte und Politik</option>
+          <option value="IN">Informatik</option>
+          <option value="IT">Italienisch</option>
+          <option value="KK">Kunst und Kultur</option>
+          <option value="LA">Latein</option>
+          <option value="MA">Mathematik</option>
+          <option value="MDs">Medienunterricht</option>
+          <option value="MU">Musik</option>
+          <option value="NP">Naturwissenschaftliches Propädeutikum</option>
+          <option value="PY">Physik</option>
+          <option value="RK">Religionskunde</option>
+          <option value="SP">Spanisch</option>
+          <option value="SP">Sport</option>
+          <option value="WR">Wirtschaft & Recht</option>
+      </select>
+        <br><span id="subject-validity"></span>
+      </div>
+      <br>
+      
+      
+      
+      
+
+      <div>
+        <label for="teacher" class="head-inputs">Lehrerkürzel(Grossbuchstaben):</label><br>
+        <input type="text" id="teacher" name="teacher" required placeholder="z. B. MAMU" minlength="4" maxlength="4" value=""> 
+        <br><span id="teacher-validity"><br></span>
+      </div>
+      
+
+      <div>
+
+        <div >
+
+
+          <span style="font-size: 13pt ; color:black;">  
+            <h4 href="https://www.zg.ch/behoerden/direktion-fur-bildung-und-kultur/ksz/unterricht/fachschaften/liste-aller-lehrer/lehrerliste_ksz_sj-20-21/download"> 
+            </h4>
+              <img src="../download.jpg" alt="Fächerliste" width="14" height="14" >
+          </span>
+          <z href="https://www.zg.ch/behoerden/direktion-fur-bildung-und-kultur/ksz/unterricht/fachschaften/liste-aller-lehrer/lehrerliste_ksz_sj-20-21/download">Liste der Lehrpersonen</z>
+
+
+        </div>
+
+      </div>
+
+
+
+      <div>
+        <label for="language" class="head-inputs">Sprache:</label><br>
+        
+        <select name="language" id="language">
+          <option value="" disabled selected>Wähle eine Sprache</option>
+          <option value="Deutsch">Deutsch</option>
+          <option value="Englisch">Englisch</option>
+          <option value="Französisch">Französisch</option>
+          <option value="Italienisch">Italienisch</option>
+          <option value="Latein">Latein</option>
+          <option value="Spanisch">Spanisch</option>
+          
+        </select>
+
+        <br><span id="language-validity"></span>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="number" class="head-inputs">Klassenstufe:</label><br>
+        <input id="number" type="number" name="number"  required placeholder="z.B. 3" >
+  
+        <br><span id="number-validity"></span>
+      </div>
+      
+      <br>
+
+      <div>
+        <label for="calendar" class="head-inputs">Gebrauchsdatum:</label><br>
+        <input id="calendar" type="date" name="calendar"  required style="margin-right: 20%">
+        
+        <br><span id="calendar-validity"></span>
+      </div>
+
+      <br>
+
+      <div>
+        <label for="text" class="head-inputs" >Beschreibung(max. 50 Buchstaben):</label><br>
+        <textarea name="text" id="text"  cols="35" ></textarea>
+        <br><span id="text-count"></span>
+
+        <br><span id="text-validity"></span>
+      </div>
+      <br>
+      <button class="submit-button" form="submit" onclick="myfunction()"> Anfragen</button>
+
+  </form>
+
+</main>
+
+<footer>
+
+  <h3 class="cont-foot">StudyHelper KSZ</h3>
+  
+
+  <div class="foot-cont-link">
+
+
+    <div class="con-foot-link">
+      <h4 class="foot-title">Diensleistungen</h4>
+  
+      <div class="con-foot-items">
+        <a href="marktplatz.html" class="foot-text" >Marktplatz Prüfungen</a><br>
+        <a href="anfrage.html" class="foot-text">Prüfungen Senden</a><br>
+        
+      </div>
+    </div>
+  
+  
+    <div class="con-foot">
+      <h4 class="foot-title">Kontaktoptionen</h4>
+  
+      <div class="con-foot-items">
+        <a href="ueber_uns.html" class="foot-text">Über uns</a><br>
+        <a href="mailto:studyhelper.ksz@gmail.com?" class="foot-text">Mail</a><br>
+        <a href="https://www.instagram.com/studyhelper.ksz/" class="foot-text">Instagram</a><br>
+  
+  
+      </div>
+    </div>
+    
+  
+  
+  </div>
+  <br>
+
+</footer>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0%";
+}
+
+
+window.addEventListener('resize', function(event){
+    var w = window.innerWidth;
+    var h = window.innerHeight; 
+    if (w > 900) {
+  		document.getElementById("mySidenav").style.width = "100%";
+}});
+
+
+
+
+     
+const teacher_input = document.getElementById('teacher');
+
+
+teacher_input.addEventListener('change', function onClick(event) {
+  var x = document.getElementById("teacher").value;
+  if (x.length == 4) {
+    document.getElementById("teacher-validity").innerHTML = "*Überprüfe bitte noch einmal, ob das Kürzel wirklich stimmt!";
+
+  } else {
+    document.getElementById("teacher-validity").innerHTML = "";
+
+  };
+        
+});
+
+
+
+const description_textarea = document.getElementById('text');
+
+
+description_textarea.addEventListener('keyup', function onClick(event) {
+  var x = document.getElementById("text").value;
+  document.getElementById("text-count").innerHTML = `*So viele Wörter kannst du noch verwenden: ${50 - x.length}`;
+        
+});
+
+
+
+function myfunction() {
+  var subject = document.getElementById("subject").value;
+  var teacher = document.getElementById("teacher").value;
+  var language = document.getElementById("language").value;
+  var number = document.getElementById("number").value;
+  var calendar = document.getElementById("calendar").value;
+  var description = document.getElementById("text").value;
+
+  var today = new Date().toISOString().slice(0, 10);
+
+  var check = true;
+
+
+
+
+  if (subject == ""){
+    document.getElementById("subject-validity").innerHTML = "füllen sie das Feld richtig aus";
+    document.getElementById("subject").style.border = "2px solid rgb(162, 0, 33)";
+
+
+    check = false;
+  } else {
+    document.getElementById("subject-validity").innerHTML = "";
+    document.getElementById("subject").style.border = "1px solid black";
+  };
+
+
+  if (teacher == "" || teacher.length != 4){
+    document.getElementById("teacher-validity").innerHTML = "füllen sie das Feld richtig aus";
+    document.getElementById("teacher").style.border = "2px solid rgb(162, 0, 33)";
+
+
+    check = false;
+  } else {
+    document.getElementById("teacher-validity").innerHTML = "";
+    document.getElementById("teacher").style.border = "1px solid black";
+  };
+
+  
+
+  if  (language == ""){
+    document.getElementById("language-validity").innerHTML = "*wählen sie eine Sprache aus";
+    document.getElementById("language").style.border = "2px solid rgb(162, 0, 33)";
+
+    check = false;
+  } else {
+    document.getElementById("language-validity").innerHTML = "";
+    document.getElementById("language").style.border = "1px solid black";
+  };
+
+
+  if  (number >  6 || number < 1 ){
+    document.getElementById("number-validity").innerHTML = "füllen sie das Feld richtig aus";
+    document.getElementById("number").style.border = "2px solid rgb(162, 0, 33)";
+
+    check = false;
+  } else {
+    document.getElementById("number-validity").innerHTML = "";
+    document.getElementById("number").style.border = "1px solid black";
+  };
+
+
+  if  (calendar == "" || new Date(today) >=  new Date(calendar) ){
+    document.getElementById("calendar-validity").innerHTML = "füllen sie das Feld richtig aus";
+    document.getElementById("calendar").style.border = "2px solid rgb(162, 0, 33)";
+
+    check = false;
+  } else {
+    document.getElementById("calendar-validity").innerHTML = "";
+    document.getElementById("calendar").style.border = "1px solid black";
+  };
+
+  if  (description.length < 1 || description.length > 50){
+    document.getElementById("text-validity").innerHTML = "füllen sie das Feld richtig aus";
+    document.getElementById("text").style.border = "2px solid rgb(162, 0, 33)";
+
+    check = false;
+  } else {
+    document.getElementById("text-validity").innerHTML = "";
+    document.getElementById("text").style.border = "1px solid black";
+  };
+
+
+  if (check != false ) {
+
+    const emailTo = 'studyhelper.ksz@gmail.com'
+    var emailBody = "Fach: " + subject  + "\nLehrer: " + teacher + "\nSprache: " + language + "\nKlassenstufe: " + number + "\nGebrauchsdatum: " 
+      + calendar + "\nBeschreibung: " + description + "\n\nWir danken dir vielmals für deine Anfrage und suchen schnellstmöglich einen Partner.";
+
+      emailBody = encodeURIComponent(emailBody);
+      window.open(`mailto:${emailTo}?&body=${emailBody}`, '_self');
+    };
+
+};
+
+</script>
+   
+</body>
+</html> 

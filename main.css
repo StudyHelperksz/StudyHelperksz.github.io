@@ -1,0 +1,974 @@
+:root {
+
+    --blue: rgb(43,48,58);
+    --orange: rgb(255,147, 79);
+    --red: rgb(162, 0, 33);
+}
+
+html {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  color: var(--blue);
+  background-color: white;
+}
+
+body {
+  margin: 0px;
+}
+
+main {
+  margin: 3%;
+}
+
+footer {
+  background-color: var(--blue);
+}
+
+h4 {
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+  .teacher {
+    width: 100%;
+  }
+  td {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+  }
+  
+  
+  h3 {
+    font-size: 1.18rem;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  h2 {
+    font-size: 1.31rem;
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 1.62rem;
+    font-weight: 600;
+  }
+  
+  p{
+    font-size: 1rem;
+    text-align: justify;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  #sidenav-logo {
+    display: flex;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+  
+  }
+  
+  .sidenav a {
+    text-decoration: none;
+    font-size: 19px;
+    color: var(--blue);
+    display: block;
+    transition: 0.2s;
+  }
+  
+  .sidenav a:hover {
+    color: var(--orange);
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  
+  .s-nav {
+      width: 26px;
+      height: 26px;
+      margin-left: 1%;
+      visibility: visible;
+  }
+  
+  .s-nav1 {
+    display: block;
+    width: 26px;
+    height: 26px;
+    
+  
+  }
+  .logo-1 {
+      color: var(--blue);
+      font-weight: 600;
+      letter-spacing: -1px;
+      margin: 0px;
+      font-size: 24px;
+  }
+  
+  .logo-2 {
+      color: var(--orange);
+      font-weight: 400;
+      letter-spacing: -1px;
+      margin: 0px;
+      font-size: 24px;
+  }
+
+  .side-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid;
+    border-color: var(--blue);
+    border-width: 2px;
+    background-color: white;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  
+  .navbar {
+      top: 0px;
+      position: sticky;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: solid;
+      border-color: var(--blue);
+      border-width: 2px;
+      width:100%;
+      background-color: white;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      display: flex;
+      align-items: center;
+  }
+  
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    border-bottom: solid;
+    border-color: var(--blue);
+    border-width: 2px;
+    justify-content: space-between;
+  
+  }
+  
+  .nav-items-text {
+    padding: 20px 0px;
+    font-weight: 300;
+    font-size: 19px;
+  }
+  
+  .nav-cont {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  
+
+  
+  .cont-language {
+    text-align: center;
+    margin-right: 3%;
+    display: flex;
+    align-items: center;
+
+  }
+  
+  
+  .item-lan {
+    font-weight: 300;
+    color: var(--blue);
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+
+  
+  
+  
+  .main-header {
+    color: var(--blue);
+    font-weight: 400;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 19px;
+    border-bottom: solid 2px var(--blue);
+  
+  }
+  
+
+  .foot-title {
+    color: var(--orange);
+    font-weight: 300;
+    margin: 0px;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .foot-text {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
+  .foot-cont-link {
+    text-align: center;
+  }
+
+  .con-foot-sub {
+    display: flex;
+    padding-top: 5px;
+  }
+  
+  .cont-foot {
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 24px;
+  }
+ 
+
+  .tests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+    
+  .con-lk {
+    border-style: solid;
+    border-color: var(--main-blue);
+    border-width: 1.5px;
+    
+    padding: 10px 20px 30px 20px;
+    width: 280px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .con-row {
+    color: var(--main-gren);
+    margin:0px;
+  }
+
+  .con-row-0 {
+    display: flex;
+    justify-content: space-between; 
+    margin:0px;
+
+  }
+
+  .con-row-1 {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .con-row-2 {
+    text-align: justify;
+
+  }
+
+  .con-buy {
+    text-decoration: none;
+    color:white;
+    background-color: var(--blue);
+    padding: 10px;
+  }
+
+  .user-text-1 {
+    margin-bottom: 20px;
+  }
+
+  .user-text {
+    color: var(--orange);
+  }
+
+
+
+
+
+  .asking-form {
+    display: inline-block;
+    justify-content: center;
+  }
+
+  .head-inputs {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+
+  input {
+    display: inline-block;
+    border-color: var(--blue);
+    width:100%;
+    font-size: 16px;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 12px 20px;
+    background-color: white;
+
+  }
+  
+  
+  textarea[id="text"] {
+    height: 100px;
+    border: 1px solid var(--blue);
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Poppins';
+    resize: horizontal; max-width: 1200px; min-width:750;
+    /* herausfinden wie man das blaue pop up verschwinden lässt*/
+  }
+
+  select {
+    display: inline-block;
+    border: solid var(--blue) 1px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: white;
+  }
+
+  .submit-button {
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+  }
+  .asking-form {
+    width: 100%;
+  }
+}
+
+
+
+@media  screen and (max-width: 2000px) and (min-width: 901px) {
+  h3 {
+    font-size: 1.18rem;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  h2 {
+    font-size: 1.31rem;
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 1.62rem;
+    font-weight: 600;
+  }
+  
+  p{
+    font-size: 1.3rem;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 1.18rem;
+  }
+
+    .s-nav1 {
+      display: none;
+    }
+
+    #sidenav-logo {
+      display: none;
+    }
+
+
+    .s-nav {
+      width: 26px;
+      height: 26px;
+      margin-left: 1%;
+      visibility: hidden;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-cont {
+      display: flex;
+      justify-content: space-evenly;
+      border-bottom: solid var(--blue) 2px;
+      padding-top: 12px;
+    }
+
+    .nav-items-text{
+      color: var(--blue);
+      font-weight: 300;
+      font-size: 19px;
+    }
+
+    .nav-items-text:hover {
+      color: var(--orange)
+
+    }
+
+    .cont-language {
+      text-align: center;
+      margin-right: 3%;
+      display: flex;
+      align-items: center;
+  
+    }
+
+    .logo-1 {
+      color: var(--blue);
+      font-weight: 600;
+      letter-spacing: -1px;
+      margin: 0px;
+      font-size: 32px;
+  }
+  
+  .logo-2 {
+      color: var(--orange);
+      font-weight: 400;
+      letter-spacing: -1px;
+      margin: 0px;
+      font-size: 32px;
+  }
+
+    .main-header {
+      color: var(--blue);
+      font-weight: 400;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      font-size: 22px;
+      border-bottom: solid 2px var(--blue);
+    
+    }
+
+    .side-navbar {
+      display: none;
+    }
+
+    .copyright {
+      display: flex;
+      margin-top: 20px;
+      margin-left: 5%;
+      margin-right: 5%;
+      border-top: solid 2px white;
+      justify-content: center;
+  
+    }
+  
+    .copyright-text {
+      color: var(--blue);
+      font-size: 21px;
+    }
+    
+    .cont-foot {
+      color: white;
+      font-weight: 400;
+      font-size: 26px;
+      text-align: center;
+      padding-top: 24px;
+    }
+  
+    .item-lan {
+      font-weight: 300;
+      color: var(--blue);
+      margin-right: 6px;
+      margin-left: 6px;
+    }
+    
+    .foot-title {
+      color: var(--orange);
+      font-size: 22px;
+      font-weight: 300;
+      margin:0px;
+      margin-top: 20px;
+    }
+    
+    .foot-text {
+      color: white;
+      font-size: 19px;
+      padding-top: 10px;
+    }
+    
+    .foot-cont-link {
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    .con-foot-sub {
+      display: flex;
+      padding-top: 5px;
+    }
+    
+  
+
+
+    .navbar {
+      top: 0px;
+      position: sticky;
+      display: flex;
+      justify-content: space-between;
+      width:100%;
+      background-color: white;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      display: flex;
+      align-items: center;
+  }
+
+  .sidenav {
+      top: 55px;
+      position: sticky;
+      background-color: white;
+      border-bottom: solid;
+      border-color: var(--blue);
+      border-width: 0px;
+  }
+
+
+  .test {
+    width: 250px;
+    height: 350px;
+    background-color: blue;
+    margin: 3%;
+  }
+  
+
+  .tests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+    
+  .con-lk {
+    border-style: solid;
+    border-color: var(--main-blue);
+    border-width: 1.5px;
+    
+    padding: 10px 20px 30px 20px;
+    width: 280px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .con-row {
+    color: var(--main-gren);
+    margin:0px;
+  }
+
+  .con-row-0 {
+    display: flex;
+    justify-content: space-between; 
+    margin:0px;
+
+  }
+
+  .con-row-1 {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .con-row-2 {
+    text-align: justify;
+
+  }
+
+  .con-buy {
+    text-decoration: none;
+    color:white;
+    background-color: var(--blue);
+    padding: 10px;
+  }
+
+  .user-text-1 {
+    margin-bottom: 20px;
+  }
+
+  .user-text {
+    color: var(--orange);
+  }
+
+
+
+
+  
+  .head-inputs {
+    font-size: 16px;
+    font-weight: 400;
+    width: 2cm;
+  }
+
+  input, select {
+    display: inline-block;
+    border-color: var(--blue);
+    width: 400px;
+    font-size: 16px;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 12px 20px;
+    background-color: white;
+
+  }
+  textarea[id="text"] {
+    height: 100px;
+    border: 1px solid var(--blue);
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Poppins';
+    resize: horizontal; max-width: 1200px; min-width:750;
+    /* herausfinden wie man das blaue pop up verschwinden lässt*/
+  }
+
+  
+
+  .submit-button {
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    width: 400px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 15;
+  }
+
+  #bereich {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 200px;
+  }
+}
+
+
+@media screen and (min-width: 2001px) {
+  h3 {
+    font-size: 1.18rem;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  h2 {
+    font-size: 1.31rem;
+    font-weight: 500;
+  }
+  
+  h1 {
+    font-size: 1.62rem;
+    font-weight: 600;
+  }
+  
+  p{
+    font-size: 1.3rem;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 1.18rem;
+  }
+
+    .s-nav1 {
+      display: none;
+    }
+
+    #sidenav-logo {
+      display: none;
+    }
+
+
+    .s-nav {
+      width: 26px;
+      height: 26px;
+      margin-left: 1%;
+      visibility: hidden;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .nav-cont {
+      display: flex;
+      justify-content: space-evenly;
+      border-bottom: solid var(--blue) 2px;
+      padding-top: 12px;
+    }
+
+    .nav-items-text{
+      color: var(--blue);
+      font-weight: 300;
+      font-size: 19px;
+    }
+
+    .nav-items-text:hover {
+      color: var(--orange)
+
+    }
+
+    .cont-language {
+      text-align: center;
+      margin-right: 3%;
+      display: flex;
+      align-items: center;
+  
+    }
+
+    .logo-1 {
+      color: var(--blue);
+      font-weight: 600;
+      letter-spacing: -1px;
+      margin: 0px;
+      font-size: 32px;
+  }
+  
+  .logo-2 {
+      color: var(--orange);
+      font-weight: 400;
+      letter-spacing: -1px;
+      margin: 0px;
+      font-size: 32px;
+  }
+
+    .main-header {
+      color: var(--blue);
+      font-weight: 400;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      font-size: 22px;
+      border-bottom: solid 2px var(--blue);
+    
+    }
+
+    .side-navbar {
+      display: none;
+    }
+
+    .copyright {
+      display: flex;
+      margin-top: 20px;
+      margin-left: 5%;
+      margin-right: 5%;
+      border-top: solid 2px white;
+      justify-content: center;
+  
+    }
+  
+    .copyright-text {
+      color: var(--blue);
+      font-size: 21px;
+    }
+    
+  
+    .item-lan {
+      font-weight: 300;
+      color: var(--blue);
+      margin-right: 6px;
+      margin-left: 6px;
+    }
+    
+    .foot-title {
+      color: var(--orange);
+      font-size: 22px;
+      font-weight: 300;
+      margin:0px;
+      margin-top: 20px;
+    }
+    
+    .foot-text {
+      color: white;
+      font-size: 19px;
+      padding-top: 10px;
+    }
+    
+    .foot-cont-link {
+      margin-left: 5%;
+      margin-right: 5%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  
+    .con-foot-sub {
+      display: flex;
+      padding-top: 5px;
+    }
+    
+  
+
+
+    .navbar {
+      top: 0px;
+      position: sticky;
+      display: flex;
+      justify-content: space-between;
+      width:100%;
+      background-color: white;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      display: flex;
+      align-items: center;
+  }
+
+  .sidenav {
+      top: 62px;
+      position: sticky;
+      background-color: white;
+      border-bottom: solid;
+      border-color: var(--blue);
+      border-width: 0px;
+  }
+
+
+  .test {
+    width: 250px;
+    height: 350px;
+    background-color: blue;
+    margin: 3%;
+  }
+  
+
+  .tests {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+    
+  .con-lk {
+    border-style: solid;
+    border-color: var(--main-blue);
+    border-width: 1.5px;
+    
+    padding: 10px 20px 30px 20px;
+    width: 280px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .con-row {
+    color: var(--main-gren);
+    margin:0px;
+  }
+
+  .con-row-0 {
+    display: flex;
+    justify-content: space-between; 
+    margin:0px;
+
+  }
+
+  .con-row-1 {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .con-row-2 {
+    text-align: justify;
+
+  }
+
+  .con-buy {
+    text-decoration: none;
+    color:white;
+    background-color: var(--blue);
+    padding: 10px;
+  }
+
+  .user-text-1 {
+    margin-bottom: 20px;
+  }
+
+  .user-text {
+    color: var(--orange);
+  }
+
+  .cont-foot {
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 24px;
+  }
+  body{
+    margin: 0% 20%;
+  }
+  .head-inputs {
+    font-size: 16px;
+    font-weight: 400;
+    width: 2cm;
+  }
+
+  input, select {
+    display: inline-block;
+    border-color: var(--blue);
+    width: 400px;
+    font-size: 16px;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 12px 20px;
+    background-color: white;
+
+  }
+  textarea[id="text"] {
+    height: 100px;
+    border: 1px solid var(--blue);
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Poppins';
+    resize: horizontal; max-width: 1200px; min-width:750;
+    /* herausfinden wie man das blaue pop up verschwinden lässt*/
+  }
+
+  
+
+  .submit-button {
+    background-color: var(--blue);
+    border: none;
+    color: white;
+    width: 400px;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 15;
+  }
+
+  #bereich {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 300px;
+  }
+}
