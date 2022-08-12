@@ -325,7 +325,7 @@ footer {
   input {
     display: inline-block;
     border-color: var(--blue);
-    width: calc(100% -100px);
+    width: calc(100% -70px);
     font-size: 16px;
     border-radius: 8px;
     border-width: 1px;
@@ -637,7 +637,7 @@ footer {
   input, select {
     display: inline-block;
     border-color: var(--blue);
-    width: 400px;
+    width: 500px;
     font-size: 16px;
     border-radius: 8px;
     border-width: 1px;
@@ -940,7 +940,7 @@ footer {
   input, select {
     display: inline-block;
     border-color: var(--blue);
-    width: 400px;
+    width: 600px;
     font-size: 16px;
     border-radius: 8px;
     border-width: 1px;

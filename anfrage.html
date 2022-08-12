@@ -113,7 +113,7 @@
 
       <div>
         <label for="teacher" class="head-inputs">Lehrerkürzel:</label><br>
-        <input type="text" id="teacher" name="teacher" required placeholder="z. B. MAMU" minlength="4" maxlength="4" value=""> 
+        <input type="text" id="teacher" name="teacher" required placeholder="z.B. MAMU" minlength="4" maxlength="4" value=""> 
         <br><span id="teacher-validity"><br></span>
       </div>
       
@@ -167,6 +167,15 @@
       </div>
 
       <br>
+
+
+      <div>
+        <label for="mail" class="head-inputs">Mail:</label><br>
+        <input type="text" id="mail" name="mail" required placeholder="z.B. studyhelper.ksz@gmail.com"  value=""> 
+        <br><span id="teacher-validity"><br></span>
+      </div>
+
+
 
       <div>
         <label for="text" class="head-inputs" >Beschreibung(max. 50 Buchstaben):</label><br>
@@ -247,17 +256,13 @@ const teacher_input = document.getElementById('teacher');
 
 
 teacher_input.addEventListener('change', function onClick(event) {
-  var x = document.getElementById("teacher").value;
-  if (x.length == 4) {
-    document.getElementById("teacher-validity").innerHTML = "*Überprüfe bitte noch einmal, ob das Kürzel wirklich stimmt!";
-
-  } else {
-    document.getElementById("teacher-validity").innerHTML = "";
-
-  };
-        
+  var x = document.getElementById("teacher").value;  
 });
 
+const mail_input = document.getElementById('mail');
+mail_input.addEventListener('change', function onClick(event) {
+  var x = document.getElementById("teacher").value;  
+});
 
 
 const description_textarea = document.getElementById('text');
@@ -278,8 +283,11 @@ function myfunction() {
   var number = document.getElementById("number").value;
   var calendar = document.getElementById("calendar").value;
   var description = document.getElementById("text").value;
+  var mail = document.getElementById("mail").value;
 
   var today = new Date().toISOString().slice(0, 10);
+  
+  
 
   var check = true;
 
@@ -358,8 +366,8 @@ function myfunction() {
 
     const emailTo = "studyhelper.ksz@gmail.com?Subject="+ number + "-" + subject + "-" + teacher.toUpperCase();
     
-    var emailBody = "Fach: " + subject  + "\nLehrer: " + teacher.toUpperCase() + "\nSprache: " + language + "\nKlassenstufe: " + number + "\nGebrauchsdatum: " 
-      + calendar + "\nBeschreibung: " + description + "\n\nWir danken dir vielmals für deine Anfrage und suchen schnellstmöglich einen Partner.";
+    var emailBody = "{"+"\n\"\Fach\"\ : \"" + subject + "\",\n\"\Lehrer\"\ : \"" + teacher.toUpperCase() + "\",\n\"\Sprache\"\ : \"" + language + "\",\n\"\Klassenstufe\"\ : \"" + number + "\",\n\"\Gebrauchsdatum\"\ : \"" 
+      + calendar.replace('-','/').replace('-','/') + "\",\n\"\Beschreibung\"\ : \"" + description + "\n\"\Mail\"\ : \"" + mail + "\"\n},"+"\n\nWir danken dir vielmals für deine Anfrage und suchen schnellstmöglich einen Partner.";
 
       emailBody = encodeURIComponent(emailBody);
       window.open(`mailto:${emailTo.toUpperCase()}&body=${emailBody}`, '_self');
