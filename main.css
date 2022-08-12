@@ -344,7 +344,7 @@ h4 {
     font-size: 18px;
     font-weight: 200;
     font-family: 'Poppins';
-    width: calc(100%-30px)
+    max-width: calc(100%-30px)
     
     /* herausfinden wie man das blaue pop up verschwinden lässt*/
   }
@@ -651,7 +651,8 @@ h4 {
     font-size: 18px;
     font-weight: 200;
     font-family: 'Poppins';
-    resize: horizontal; max-width: 1200px; min-width:750;
+    max-width: 400px;
+    min-width: 400px;
     /* herausfinden wie man das blaue pop up verschwinden lässt*/
   }
 
@@ -951,7 +952,8 @@ h4 {
     font-size: 18px;
     font-weight: 200;
     font-family: 'Poppins';
-    resize: horizontal; max-width: 1200px; min-width:750;
+    max-width: 400px;
+    min-width: 400px;
     /* herausfinden wie man das blaue pop up verschwinden lässt*/
   }
 
