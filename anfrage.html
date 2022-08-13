@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VL650HJ95H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-VL650HJ95H');
-</script>
+
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VL650HJ95H"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-VL650HJ95H');
+        </script>
+
+
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>KSZ Webseite</title>
@@ -68,7 +74,6 @@
 
 
 
-<! -- für sub titel in was von menu ausgewählt wurde -->
 <h3 class="main-header">PRÜFUNGEN ANFRAGEN</h3>
 
 <main>
@@ -167,7 +172,7 @@
       <br>
 
       <div>
-        <label for="calendar" class="head-inputs">Gebrauchsdatum:</label><br>
+        <label for="calendar" class="head-inputs">Datum der Prüfung:</label><br>
         <input id="calendar" type="date" name="calendar"  required style="margin-right: 20%">
         
         <br><span id="calendar-validity"></span>
@@ -177,7 +182,7 @@
 
 
       <div>
-        <label for="mail" class="head-inputs">Mail:</label><br>
+        <label for="mail" class="head-inputs">Deine Mailadresse:</label><br>
         <input type="text" id="mail" name="mail" required placeholder="z.B. studyhelper.ksz@gmail.com"  value=""> 
         <br><span id="teacher-validity"><br></span>
       </div>
@@ -370,10 +375,10 @@ function myfunction() {
 
   if (check != false ) {
 
-    const emailTo = "studyhelper.ksz@gmail.com?Subject="+ number + "-" + subject + "-" + teacher.toUpperCase();
+    const emailTo = "studyhelper.ksz@gmail.com?Subject=Anfrage";
     
     var emailBody = "{"+"\n\"\Fach\"\ : \"" + subject + "\",\n\"\Lehrer\"\ : \"" + teacher.toUpperCase() + "\",\n\"\Sprache\"\ : \"" + language + "\",\n\"\Klassenstufe\"\ : \"" + number + "\",\n\"\Gebrauchsdatum\"\ : \"" 
-      + calendar.replace('-','/').replace('-','/') + "\",\n\"\Beschreibung\"\ : \"" + description + "\",\n\"\Mail\"\ : \"" + mail + "\"\n},"+"\n\nWir danken dir vielmals für deine Anfrage und suchen schnellstmöglich einen Partner.";
+      + calendar.replace('-','/').replace('-','/') + "\",\n\"\Beschreibung\"\ : \"" + description + "\",\n\"\Mail\"\ : \"" + mail + "\"\n},"+"\n\nWir danken dir vielmals für deine Anfrage, welche am nächsten Sonntag um 12:00 Uhr aufgeschaltet wird. Bei einer Zusendung wirst du direkt mit der Person in Kontakt treten.\n\Dein StudyHelper Team";
 
       emailBody = encodeURIComponent(emailBody);
       window.open(`mailto:${emailTo.toUpperCase()}&body=${emailBody}`, '_self');
