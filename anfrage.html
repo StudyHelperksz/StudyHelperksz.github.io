@@ -366,7 +366,7 @@ function myfunction() {
     const emailTo = "studyhelper.ksz@gmail.com?Subject="+ number + "-" + subject + "-" + teacher.toUpperCase();
     
     var emailBody = "{"+"\n\"\Fach\"\ : \"" + subject + "\",\n\"\Lehrer\"\ : \"" + teacher.toUpperCase() + "\",\n\"\Sprache\"\ : \"" + language + "\",\n\"\Klassenstufe\"\ : \"" + number + "\",\n\"\Gebrauchsdatum\"\ : \"" 
-      + calendar.value.split("-").reverse().join("-").replace('-','/').replace('-','/') + "\",\n\"\Beschreibung\"\ : \"" + description + "\",\n\"\Mail\"\ : \"" + mail + "\"\n},"+"\n\nWir danken dir vielmals für deine Anfrage und suchen schnellstmöglich einen Partner.";
+      + calendar.replace('-','/').replace('-','/') + "\",\n\"\Beschreibung\"\ : \"" + description + "\",\n\"\Mail\"\ : \"" + mail + "\"\n},"+"\n\nWir danken dir vielmals für deine Anfrage und suchen schnellstmöglich einen Partner.";
 
       emailBody = encodeURIComponent(emailBody);
       window.open(`mailto:${emailTo.toUpperCase()}&body=${emailBody}`, '_self');

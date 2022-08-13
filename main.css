@@ -885,7 +885,7 @@ footer {
 
   .con-row {
     color: var(--main-gren);
-    margin:0px;
+    margin:0px; 
   }
 
   .con-row-0 {
