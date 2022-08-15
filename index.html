@@ -28,9 +28,9 @@
         
       </head>
 
+
+
 <body>
-
-
 <div class="navbar">
     <img class="s-nav" src="menu_blue.svg"  alt="menu" onclick="openNav()" >
     <a href="#"><span class="logo-1">Study</span><span class="logo-2">Helper</span></a>
@@ -73,8 +73,6 @@
 
 
 
-
-<! -- für sub titel in was von menu ausgewählt wurde -->
 <h3 class="main-header">MARKTPLATZ PRÜFUNGEN</h3>
 <main>
     <p>Willkommen auf dem Marktplatz. Hier findest du die wöchentlichen Inserate deiner Mitschüler. Wenn du beim Stöbern eine Prüfung findest, die bei dir zuhause raumliegt, darfst du diese gerne an die betreffende Person senden. Beachte, 
@@ -82,6 +80,15 @@
     </p>
 </main>
 
+
+<!--Cookiebanner-->
+<div id="Myid" class="cookie-notification" >
+    <h5>Datenschutz-Einstellungen</h5>
+    <p>Diese Webseite verwendet Google Analytics für die Optimierung der Webseite. Dadurch kann dir eine reibunglose Benutzeroberfläche geboten werden.</p>
+    <button type=button class="btn-close-cookie-notification" onclick="toggleText()" >Weiter</button>
+
+</div>
+<!--Cookiebanner-->
 
     <div class="tests">
 
@@ -335,8 +342,8 @@
 
 <!--wichtig, dass footer nicht von test beeinflusst wird-->
 </div>
-</main>
 
+</main>
 
 
 
@@ -401,7 +408,16 @@ window.addEventListener('resize', function(event){
 
 
 });
+/*Cookiebanner*/
 
+
+function toggleText(){
+  var x = document.getElementById("Myid");
+    x.style.display = "none";
+  
+}
+
+/*Cookiebanner*/
 
 </script>
    
