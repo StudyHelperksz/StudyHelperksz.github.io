@@ -79,7 +79,7 @@
 <main>
   <p>Für die Anfrage ist keine Registrierung erforderlich und es müssen auch keine persönlichen Daten preisgegeben werden. Mit einem Klick auf den Anfrage-Button wird man 
     automatisch auf sein E-Mail-Programm weitergeleitet. 
-    Bei Spam oder anderen nicht zielführenden Aktionen wird die Email-Adresse ohne jegliche Vorwarnung gesperrt.  
+    Bei Spam oder anderen nicht zielführenden Aktionen wird die E-Mail-Adresse ohne jegliche Vorwarnung gesperrt.  
   </p>
 
 
@@ -390,10 +390,10 @@ function myfunction() {
     const emailTo = "studyhelper.ksz@gmail.com?Subject=Anfrage";
     
     var emailBody = "{"+"\n\"\Fach\"\ : \"" + subject + "\",\n\"\Lehrer\"\ : \"" + teacher.toUpperCase() + "\",\n\"\Sprache\"\ : \"" + language + "\",\n\"\Klassenstufe\"\ : \"" + number + "\",\n\"\Gebrauchsdatum\"\ : \"" 
-      + calendar.replace('-','/').replace('-','/') + "\",\n\"\Beschreibung\"\ : \"" + description + "\",\n\"\Mail\"\ : \"" + mail + "\"\n},"+"\n\nWir danken dir vielmals für deine Anfrage, welche am nächsten Sonntag um 12:00 Uhr aufgeschaltet wird. Bei einer Zusendung wirst du direkt mit der Person in Kontakt treten.\n\Dein StudyHelper Team";
+      + calendar.replace('-','/').replace('-','/') + "\",\n\"\Beschreibung\"\ : \"" + description + "\",\n\"\Mail\"\ : \"" + mail + "\"\n},"+"\n\nWir danken dir vielmals für deine Anfrage, welche am nächsten Sonntag um 12:00 Uhr aufgeschaltet wird. Bei einer Zusendung wirst du direkt mit dem Zusender in Kontakt treten.\n\Dein StudyHelper Team";
 
       emailBody = encodeURIComponent(emailBody);
-      window.open(`mailto:${emailTo.toUpperCase()}&body=${emailBody}`, '_self');
+      window.open(`mailto:${emailTo}&body=${emailBody}`, '_self');
     };
 
 
